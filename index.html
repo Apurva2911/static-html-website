@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple HTML Page</title>
+  <style>
+    /* Small inline CSS to make it look nicer */
+    body { font-family: system-ui, Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 0 16px; }
+    header { border-bottom: 1px solid #eee; margin-bottom: 20px; }
+    h1 { margin: 0 0 8px 0; }
+    .btn { display: inline-block; padding: 8px 12px; border: 1px solid #333; border-radius: 6px; text-decoration: none; }
+    footer { margin-top: 30px; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello — Simple HTML</h1>
+    <p>A tiny example page with a bit of styling and a JavaScript button.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Title and meta tags for proper rendering</li>
+        <li>Inline CSS for quick styling</li>
+        <li>Button that runs a small JavaScript function</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Try it</h2>
+      <p id="msg">Click the button to see a message.</p>
+      <button class="btn" onclick="showMessage()">Click me</button>
+    </section>
+
+    <section>
+      <h2>Link & Image (placeholder)</h2>
+      <p>
+        <a href="https://example.com" target="_blank" rel="noopener">Visit example.com</a>
+      </p>
+      <p>
+        <img src="https://via.placeholder.com/300x120?text=Placeholder" alt="placeholder image" />
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Saved as <code>index.html</code>. Open it in your browser to view.</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      const el = document.getElementById('msg');
+      el.textContent = 'You clicked the button — neat!';
+      el.style.color = 'green';
+    }
+  </script>
+
+</body>
+</html>
